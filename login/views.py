@@ -22,7 +22,6 @@ def login_view(request: HttpRequest) -> HttpResponse:
         
     return render(request, 'login/login.html')
 
-
 def register_view(request: HttpRequest) -> HttpResponse:
     if request.method == "GET":
         form = forms.RegisterForm()
